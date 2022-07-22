@@ -34,8 +34,6 @@ class MainActivity : AppCompatActivity() {
             (findViewById<View>(R.id.textName) as EditText).text.toString())
 
         contentResolver.insert(MyContentProvider.CONTENT_URI, values)
-
-        Toast.makeText(baseContext, "New Record Inserted", Toast.LENGTH_LONG).show()
     }
 
     @SuppressLint("Range")
